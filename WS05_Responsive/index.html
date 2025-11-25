@@ -10,19 +10,17 @@
     <header>
       <h1>Erno Tyrylahti</h1>
       <p>Hello and welcome to my website!</p>
-      <p>My name is Erno and I am a young business IT student from Finland.</p>
-      <p>Also my face is very wide as you can see below:</p>
-      <img
-        id="kuva"
-        src="images/kuva.jpg"
-        alt="meikaepoika"
-        width="30%"
-        height="240"
-      />
-      <button class="transition-button" id="zoomButton">:D</button>
+
+      <div class="venyvakuva">
+        <img class="kuva" src="images/kuva.jpg" alt="meikaepoika" />
+        <button class="transition-button" id="zoomButton">:D</button>
+      </div>
       <script src="painike.js"></script>
-      <nav>
-        <ul>
+
+      <h3>Navigation</h3>
+      <nav class="responsive-nav">
+        <button class="menu-toggle">☰ Menu</button>
+        <ul class="nav-list">
           <li><a href="#about">About</a></li>
           <li><a href="#courses">Courses</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -33,7 +31,10 @@
     <main>
       <section id="about">
         <h2>About Me</h2>
-        <p>This is a paragraph about me.</p>
+        <p>
+          My name is Erno and I'm a young Business and Information Technology
+          student from Finland.
+        </p>
         <h3>My hobbies</h3>
         <ol>
           <li>Music</li>
@@ -75,36 +76,53 @@
         </form>
       </section>
 
+      <section class="youtube-link">
+        <a
+          href="https://www.youtube.com/watch?v=kgwgtERCVI4&list=RDkgwgtERCVI4&start_radio=1"
+          class="styled-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Check this out!
+        </a>
+      </section>
+
+      <div class="responsive-container">
+        <div class="column">Lorem ipsum</div>
+        <div class="column">Cras maximus</div>
+      </div>
+
       <div class="animation-box">:D</div>
 
       <ul class="pseudo-list">
-        <li>A</li>
-        <li>Ah</li>
-        <li>Aha</li>
-        <li>Ahah</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <li>Fusce pretium mi et diam cursus placerat.</li>
+        <li>
+          Pellentesque sit amet elit imperdiet, lobortis ex quis, tempor eros.
+        </li>
+        <li>
+          Sed mollis, diam sed vestibulum congue, dolor est bibendum sem, in
+          sollicitudin arcu nunc quis arcu.
+        </li>
       </ul>
 
       <div class="flex-container">
-        <div class="box">Box 1</div>
-        <div class="box">Box 2</div>
-        <div class="box">Box 3</div>
+        <div class="box">Curabitur posuere</div>
+        <div class="box">Donec tempus</div>
+        <div class="box">Aenean lobortis</div>
       </div>
 
       <div class="grid-container">
-        <div class="grid-item">1</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>
-        <div class="grid-item">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">6</div>
+        <div class="grid-item">Aliquam</div>
+        <div class="grid-item">sem</div>
+        <div class="grid-item">dolor</div>
+        <div class="grid-item">feugiat</div>
+        <div class="grid-item">quis</div>
+        <div class="grid-item">tortor sed</div>
       </div>
 
       <div class="responsive-box">Resize the window to see the effect</div>
-
-      <a
-        href="https://www.youtube.com/watch?v=kgwgtERCVI4&list=RDkgwgtERCVI4&start_radio=1"
-        >Check this out!</a
-      >
+      <div class="media-query-box">Resize the window to see the effect</div>
 
       <blockquote class="quote">
         I'll have two number 9s, a number 9 large, a number 6 with extra dip, a
@@ -112,7 +130,11 @@
       </blockquote>
     </main>
 
-    <img src="images/oikealogo.png" alt="Sample Image" class="filter-image" />
+    <img
+      src="images/oikealogo.png"
+      alt="Sample Image"
+      class="filter-image responsive-image"
+    />
 
     <footer>
       <p>Copyright 2025</p>

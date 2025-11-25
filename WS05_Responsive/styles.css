@@ -1,5 +1,5 @@
 p {
-  color: rgb(104, 104, 222);
+  color: rgb(138, 138, 219);
   text-shadow: 1px 1px #000000;
 }
 
@@ -8,21 +8,53 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
-  color: rgb(64, 182, 182);
-}
-
-h2 {
-  color: rgb(64, 182, 182);
-}
-
+h1,
+h2,
 h3 {
   color: rgb(64, 182, 182);
 }
 
 div {
-  padding: 20px;
-  margin: 10px;
+  margin: 8px;
+  padding: 10px;
+}
+
+.responsive-nav .nav-list {
+  display: flex;
+  list-style: none;
+}
+
+@media (max-width: 600px) {
+  .responsive-nav .menu-toggle {
+    display: block;
+  }
+
+  .responsive-nav .nav-list {
+    display: none;
+  }
+}
+
+nav {
+  background: rgb(63, 63, 187);
+  border-radius: 8px;
+  display: inline-block;
+  padding: 15px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li a {
+  background: rgb(127, 26, 56);
+  border-radius: 5px;
+  color: rgb(138, 138, 219);
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: underline;
 }
 
 ol {
@@ -31,9 +63,10 @@ ol {
 }
 
 table {
-  width: 30%;
   border-collapse: collapse;
   color: rgb(104, 104, 222);
+  text-shadow: 1px 1px #000000;
+  width: 30%;
 }
 
 td {
@@ -57,31 +90,40 @@ label {
   font-weight: bold;
 }
 
-input[type="text"],
-input[type="email"] {
-  padding: 8px;
+input[type="email"],
+input[type="text"] {
   border: 1px solid #ddd;
   border-radius: 4px;
+  padding: 8px;
 }
 
 input[type="submit"] {
   background-color: #2074d3;
-  color: white;
-  padding: 10px;
   border: none;
   border-radius: 4px;
+  color: white;
   cursor: pointer;
+  padding: 10px;
 }
 
 input[type="submit"]:hover {
   background-color: #1a54be;
 }
 
+.venyvakuva {
+  align-items: flex-end;
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+}
+
 .transition-button {
   background-color: rgb(64, 182, 182);
-  padding: 10px 20px;
-  border: none;
+  border: 1px solid black;
   cursor: pointer;
+  font-size: large;
+  margin: 0;
+  padding: 10px 15px;
   transition: background-color 0.4s ease;
 }
 
@@ -89,12 +131,18 @@ input[type="submit"]:hover {
   background-color: rgb(40, 205, 123);
 }
 
+.kuva {
+  height: auto;
+  transition: width 0.3s ease;
+  width: 17.5%;
+}
+
 .animation-box {
-  width: 50px;
-  height: 50px;
-  background-color: lightblue;
-  position: relative;
   animation: move 8s infinite alternate;
+  background-color: lightblue;
+  height: 50px;
+  position: relative;
+  width: 50px;
 }
 
 @keyframes move {
@@ -106,12 +154,12 @@ input[type="submit"]:hover {
   }
 }
 
-.pseudo-list li:nth-child(odd) {
-  background-color: lightgray;
-}
-
 .pseudo-list li:nth-child(even) {
   background-color: white;
+}
+
+.pseudo-list li:nth-child(odd) {
+  background-color: lightgray;
 }
 
 .filter-image {
@@ -123,25 +171,79 @@ input[type="submit"]:hover {
   filter: grayscale(0%);
 }
 
+.responsive-image {
+  height: auto;
+  max-width: 100%;
+}
+
+.media-query-box {
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .media-query-box {
+    background-color: lightcoral;
+  }
+
+  .responsive-box {
+    background-color: lightcoral;
+  }
+
+  .column {
+    flex: 100%;
+  }
+}
+
+@media (min-width: 601px) {
+  .media-query-box {
+    background-color: lightblue;
+  }
+
+  .responsive-box {
+    background-color: lightseagreen;
+  }
+}
+
+.styled-link {
+  display: inline-block; /* helpottaa paddingin ja hoverin käyttöä */
+  padding: 10px 20px; /* sisäinen tila */
+  background-color: rgb(64, 182, 182); /* taustaväri */
+  color: white; /* tekstin väri */
+  text-decoration: none; /* poistaa oletus-underline */
+  border-radius: 8px; /* pyöristetyt kulmat */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.styled-link:hover {
+  background-color: rgb(40, 205, 123); /* hover-tausta */
+  transform: scale(1.05); /* kevyt zoom hoverilla */
+}
+
+.youtube-link {
+  margin-top: 30px;
+  text-align: left;
+}
+
 .quote {
-  position: relative;
-  padding-left: 20px;
   font-style: italic;
+  padding-left: 20px;
+  position: relative;
 }
 
 .quote::before {
+  color: rgb(38, 0, 255);
   content: "“";
   font-size: 40px;
-  position: absolute;
   left: 0;
+  position: absolute;
   top: 0;
-  color: rgb(38, 0, 255);
 }
 
 .flex-container {
+  align-items: center;
   display: flex;
   justify-content: space-around;
-  align-items: center;
 }
 
 .box {
@@ -153,7 +255,6 @@ input[type="submit"]:hover {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
 }
 
 .grid-item {
@@ -167,14 +268,12 @@ input[type="submit"]:hover {
   text-align: center;
 }
 
-@media (max-width: 600px) {
-  .responsive-box {
-    background-color: lightcoral;
-  }
+.responsive-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-@media (min-width: 601px) {
-  .responsive-box {
-    background-color: lightseagreen;
-  }
+.column {
+  flex: 1;
+  padding: 10px;
 }

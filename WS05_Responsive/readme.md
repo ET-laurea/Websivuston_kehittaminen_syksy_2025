@@ -1,0 +1,1 @@
+HTML webpage with advanced CSS, layout ja rensponsiveness added.
