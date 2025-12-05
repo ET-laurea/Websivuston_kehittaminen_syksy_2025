@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Erno Tyrylahti</title>
+    <link rel="icon" type="image/jpeg" href="images/favicon.jpg" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap JavaScript (place before closing </body> tag) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Erno Tyrylahti</h1>
+      <p>Hello and welcome to my website!</p>
+
+      <div class="venyvakuva">
+        <img class="kuva" src="images/kuva.jpg" alt="meikaepoika" />
+        <button class="transition-button" id="zoomButton">:D</button>
+      </div>
+      <script src="painike.js"></script>
+
+      <h3>Navigation</h3>
+      <nav class="responsive-nav">
+        <button class="menu-toggle">☰ Menu</button>
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            >This is a second Navbar. It doesn't work
+            properly but the one above is better.
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          My name is Erno and I'm a young Business and Information Technology
+          student from Finland.
+        </p>
+        <h3>My hobbies</h3>
+        <ol>
+          <li>Music</li>
+          <li>Gaming</li>
+          <li>Gym</li>
+        </ol>
+      </section>
+
+      <section id="courses">
+        <h2>My ongoing courses:</h2>
+        <table>
+          <tr>
+            <th>Course name</th>
+            <th>Content</th>
+          </tr>
+          <tr>
+            <td>Websivuston kehittäminen</td>
+            <td>Making a website</td>
+          </tr>
+          <tr>
+            <td>Professional Communication in English</td>
+            <td>Practising English</td>
+          </tr>
+          <tr>
+            <td>Liiketoimintaympäristöt</td>
+            <td>Business environments</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="contact">
+        <h2>Contact me</h2>
+        <form class="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="your@email.com"
+          />
+
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Your message..."
+          ></textarea>
+
+          <input type="submit" value="Send Message" />
+        </form>
+      </section>
+
+      <section class="youtube-link">
+        <a
+          href="https://www.youtube.com/watch?v=kgwgtERCVI4&list=RDkgwgtERCVI4&start_radio=1"
+          class="styled-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Check this out!
+        </a>
+      </section>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-12">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </div>
+          <div class="col-md-4 col-12">
+            Curabitur placerat vulputate mauris, venenatis varius tortor
+            suscipit sit amet.
+          </div>
+          <div class="col-md-4 col-12">
+            Sed pulvinar, arcu quis lobortis pharetra, lorem sapien mattis eros,
+            quis ultricies ante ex et odio.
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-info">Click Me</button>
+
+      <div class="card" style="width: 18rem">
+        <img src="path/to/image.jpg" class="card-img-top" alt="Card Image" />
+        <div class="card-body">
+          <h5 class="card-title">Card Title</h5>
+          <p class="card-text">
+            This is a simple card example using Bootstrap.
+          </p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+
+      <div class="alert alert-warning" role="alert">
+        This is a warning alert—check it out!
+      </div>
+
+      <div class="responsive-container">
+        <div class="column">Lorem ipsum</div>
+        <div class="column">Cras maximus</div>
+      </div>
+
+      <div class="animation-box">:D</div>
+
+      <ul class="pseudo-list">
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <li>Fusce pretium mi et diam cursus placerat.</li>
+        <li>
+          Pellentesque sit amet elit imperdiet, lobortis ex quis, tempor eros.
+        </li>
+        <li>
+          Sed mollis, diam sed vestibulum congue, dolor est bibendum sem, in
+          sollicitudin arcu nunc quis arcu.
+        </li>
+      </ul>
+
+      <div class="flex-container">
+        <div class="box">Curabitur posuere</div>
+        <div class="box">Donec tempus</div>
+        <div class="box">Aenean lobortis</div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-item">Aliquam</div>
+        <div class="grid-item">sem</div>
+        <div class="grid-item">dolor</div>
+        <div class="grid-item">feugiat</div>
+        <div class="grid-item">quis</div>
+        <div class="grid-item">tortor sed</div>
+      </div>
+
+      <div class="responsive-box">Resize the window to see the effect</div>
+      <div class="media-query-box">Resize the window to see the effect</div>
+
+      <blockquote class="quote">
+        I'll have two number 9s, a number 9 large, a number 6 with extra dip, a
+        number 7, two number 45s, one with cheese, and a large soda.
+      </blockquote>
+    </main>
+
+    <img
+      src="images/oikealogo.png"
+      alt="Sample Image"
+      class="filter-image responsive-image"
+    />
+
+    <footer>
+      <p>&copy; 2025 Erno Tyrylahti. Kaikki oikeudet pidätetään.</p>
+    </footer>
+  </body>
+</html>

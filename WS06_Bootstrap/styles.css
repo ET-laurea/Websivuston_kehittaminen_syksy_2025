@@ -1,0 +1,331 @@
+p {
+  color: rgb(138, 138, 219);
+  text-shadow: 1px 1px #000000;
+}
+
+body {
+  background-color: rgb(127, 26, 56);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(64, 182, 182);
+}
+
+div {
+  margin: 8px;
+  padding: 10px;
+}
+
+.responsive-nav .nav-list {
+  display: flex;
+  list-style: none;
+}
+
+@media (max-width: 600px) {
+  .responsive-nav .menu-toggle {
+    display: block;
+  }
+
+  .responsive-nav .nav-list {
+    display: none;
+  }
+}
+
+nav {
+  background: rgb(63, 63, 187);
+  border-radius: 8px;
+  display: inline-block;
+  padding: 15px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li a {
+  background: rgb(127, 26, 56);
+  border-radius: 5px;
+  color: rgb(138, 138, 219);
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: underline;
+}
+
+ol {
+  color: rgb(104, 104, 222);
+  text-shadow: 1px 1px #000000;
+}
+
+table {
+  border-collapse: collapse;
+  color: rgb(104, 104, 222);
+  text-shadow: 1px 1px #000000;
+  width: 30%;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 33.3%; /* täyttää vasemman laidan */
+  padding: 10px 0; /* kevyt ylä- ja alapadding */
+  background-color: rgba(63, 63, 187, 0.1); /* kevyt tausta */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: rgb(64, 182, 182);
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: rgb(64, 182, 182);
+  box-shadow: 0 0 5px rgba(64, 182, 182, 0.5);
+  outline: none;
+}
+
+.contact-form input[type="submit"] {
+  background-color: rgb(64, 182, 182);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact-form input[type="submit"]:hover label {
+  font-weight: bold;
+}
+
+input[type="email"],
+input[type="text"] {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+input[type="submit"] {
+  background-color: #2074d3;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #1a54be;
+}
+
+.venyvakuva {
+  align-items: flex-end;
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+}
+
+.transition-button {
+  background-color: rgb(64, 182, 182);
+  border: 1px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: large;
+  margin: 0;
+  padding: 10px 15px;
+  transition: background-color 0.4s ease;
+}
+
+.transition-button:hover {
+  background-color: rgb(40, 205, 123);
+}
+
+/* Lukitun napin tyyli */
+.transition-button.locked {
+  background-color: #aaa;       /* harmaa */
+  cursor: not-allowed;          /* ei-klikattava */
+  color: #666;                  /* himmennetty teksti */
+}
+
+.kuva {
+  height: auto;
+  transition: width 0.3s ease;
+  width: 25%;
+}
+
+.animation-box {
+  animation: move 8s infinite alternate;
+  background-color: lightblue;
+  height: 50px;
+  position: relative;
+  width: 50px;
+}
+
+@keyframes move {
+  from {
+    left: 0;
+  }
+  to {
+    left: 200px;
+  }
+}
+
+.pseudo-list li:nth-child(even) {
+  background-color: white;
+}
+
+.pseudo-list li:nth-child(odd) {
+  background-color: lightgray;
+}
+
+.filter-image {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.filter-image:hover {
+  filter: grayscale(0%);
+}
+
+.responsive-image {
+  height: auto;
+  max-width: 100%;
+}
+
+.media-query-box {
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .media-query-box {
+    background-color: lightcoral;
+  }
+
+  .responsive-box {
+    background-color: lightcoral;
+  }
+
+  .column {
+    flex: 100%;
+  }
+}
+
+@media (min-width: 601px) {
+  .media-query-box {
+    background-color: lightblue;
+  }
+
+  .responsive-box {
+    background-color: lightseagreen;
+  }
+}
+
+.styled-link {
+  display: inline-block; /* helpottaa paddingin ja hoverin käyttöä */
+  padding: 10px 20px; /* sisäinen tila */
+  background-color: rgb(64, 182, 182); /* taustaväri */
+  color: white; /* tekstin väri */
+  text-decoration: none; /* poistaa oletus-underline */
+  border-radius: 8px; /* pyöristetyt kulmat */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.styled-link:hover {
+  background-color: rgb(40, 205, 123); /* hover-tausta */
+  transform: scale(1.05); /* kevyt zoom hoverilla */
+}
+
+.youtube-link {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.quote {
+  font-style: italic;
+  padding-left: 20px;
+  position: relative;
+}
+
+.quote::before {
+  color: rgb(38, 0, 255);
+  content: "“";
+  font-size: 40px;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.flex-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-item {
+  background-color: lightgreen;
+  padding: 20px;
+  text-align: center;
+}
+
+.responsive-box {
+  padding: 20px;
+  text-align: center;
+}
+
+.responsive-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.85rem;
+  color: #888;
+}

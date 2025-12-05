@@ -1,1 +1,1 @@
-HTML webpage with advanced CSS, layout ja rensponsiveness added.
+HTML webpage with advanced CSS, layout and rensponsiveness added.
