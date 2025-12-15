@@ -23,7 +23,7 @@ document.querySelectorAll("a").forEach((link) => {
 
       setTimeout(() => {
         window.location.href = href;
-      }, 100);
+      }, 300);
     }
   });
 });
