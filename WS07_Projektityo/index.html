@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <!--perus tiedot ja linkit bootstrappiin-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Etusivu</title>
+    <link rel="icon" type="image/jpeg" href="images/favicon.jpg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar alkaa -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Etusivu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sivu2.html">Musiikki</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sivu3.html">Videopeli</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sivu4.html">Yhteystiedot</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar loppuu -->
+
+    <main class="container" style="padding-top: 70px">
+      <!-- Oikea content alkaa -->
+      <h1>Tervetuloa!</h1>
+      <p>
+        Tämä nettisivukokonaisuus esittelee kiinnostuksen kohteeni musiikissa ja
+        videopeleissä. Sivustolta löydät kattavasti tietoa lempibändistäni
+        <strong>Porcupine Tree</strong>, mukaan lukien
+        <a href="sivu2.html#top5" class="text-primary text-decoration-underline"
+          >Top 5 -lista</a
+        >
+        suosikkikappaleista, live videon ja lyhyen esittelyn bändistä. Lisäksi
+        voit tutustua suosikkivideopeliini
+        <strong>The Long Dark</strong>, jossa on
+        <a
+          href="sivu3.html#galleria"
+          class="text-primary text-decoration-underline"
+          >kuvagalleria</a
+        >
+        pelin kauniista maisemista, achievement-progress bar selviytymispäiville
+        ja interaktiivisia hover-efektejä kuvissa sekä navigaatiopalkissa.
+      </p>
+      <p>
+        Sivuston rakenne on toteutettu HTML:llä ja Bootstrapin avulla
+        responsiiviseksi, joten se toimii saumattomasti niin tietokoneella kuin
+        mobiililaitteilla. Voit navigoida helposti yläreunan
+        <a href="index.html" class="text-primary text-decoration-underline"
+          >navbarin</a
+        >
+        kautta kaikille sivuille, ja aktiivinen sivu on selkeästi indikoitu.
+      </p>
+      <p>
+        Lisäksi
+        <a href="sivu4.html" class="text-primary text-decoration-underline"
+          >yhteystietosivulla</a
+        >
+        voit lähettää viestin lomakkeen kautta tai nähdä sähköpostiosoitteen
+        turvallisesti merkittynä. Kaikki sivut ovat yhtenäisiä visuaalisesti
+        värimaailman, typografian ja hover-efektien osalta, luoden miellyttävän
+        ja selkeän käyttökokemuksen.
+      </p>
+
+      <!-- Sivunvaihto nappi -->
+      <div class="text-center mt-5 mb-4">
+        <a href="sivu2.html" class="btn btn-primary btn-md btn-hover">
+          Seuraavalle sivulle &rarr;
+        </a>
+      </div>
+
+      <!-- Oikea content loppuu -->
+    </main>
+
+    <!--footteri ja vielä scripti loppuun-->
+    <footer class="bg-dark text-white text-center p-3">
+      <p class="mb-0">
+        &copy; 2025 Erno Tyrylahti. Kaikki oikeudet pidätetään.
+      </p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

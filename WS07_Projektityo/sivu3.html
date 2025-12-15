@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <!--perus tiedot ja linkit bootstrappiin-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Videopeli</title>
+    <link rel="icon" type="image/jpeg" href="images/sivu3favicon.jpg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page-sivu3">
+    <!-- Navbar alkaa -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Etusivu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sivu2.html">Musiikki</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sivu3.html">Videopeli</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sivu4.html">Yhteystiedot</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar loppuu -->
+
+    <main class="lngdrk-bg py-5 px-3">
+      <div class="container">
+        <!-- Oikea content alkaa -->
+        <h1>The Long Dark</h1>
+
+        <p>
+          The Long Dark on selviytymispeli, jossa pelaaja joutuu selviytymään
+          Kanadan karussa luonnossa. Peli keskittyy realismiin, resurssien
+          hallintaan ja ympäristön vaarojen huomioimiseen. Tässä sivulla löydät
+          tietoa pelin ominaisuuksista, suosituista tavoista pelata ja linkkejä
+          videoihin ja sivustoihin.
+        </p>
+
+        <p>
+          Pelin survival-tila on hyvin uudelleenpelattava ja siinä minulla onkin
+          kertynyt eniten pelitunteja. Jokainen pelikerta tuo uusia haasteita
+          sekä oivalluksia selviytymisestä karussa ja arvaamattomassa
+          ympäristössä. Pelaaja joutuu jatkuvasti tekemään strategisia päätöksiä
+          ruoan, veden, lämmön ja varusteiden hallinnassa, mikä tekee pelistä
+          intensiivisen ja palkitsevan. Peli on yksi selviytymispeleistä, jossa
+          tuntuu oikeasti, että vaara vaanii koko ajan, olipa kyse
+          villieläimistä, ankarasta säästä tai luonnon yllättävistä tilanteista.
+          Kuoleman jälkeen tallennus oikeasti loppuu, mikä lisää jännitystä ja
+          saa jokaisen valinnan tuntumaan merkitykselliseltä. Pelin musiikit ja
+          itse tunnari on todella hyvä ja mystinen, ja se luo pelimaailmaan
+          vangitsevan tunnelman, joka saa pelaajan uppoutumaan täysin tähän
+          kylmään ja kauniiseen maailmaan. Pelin viides episodi julkaistaan ensi
+          vuoden alussa ja tarina on ollut kehitteillä monta vuotta, mikä näkyy
+          huolellisessa juonen kehityksessä, yksityiskohtaisessa maailmassa ja
+          monipuolisissa hahmoissa, jotka tekevät kokemuksesta syvällisen ja
+          pitkäkestoisen.
+        </p>
+
+        <h2 class="mt-5">Kuvagalleria</h2>
+        <p>
+          Tässä muutamia kuvakaappauksia pelistä The Long Dark, joita olen
+          ottanut pelatessani.
+        </p>
+        <p>
+          💡 Vinkki: klikkaa kuvaa nähdäksesi sen suurempana popup-ikkunassa.
+        </p>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+          <!-- Kuva 1 -->
+          <div class="col">
+            <div class="card">
+              <img
+                src="images/lngdrk1.jpg"
+                class="card-img-top img-fluid"
+                alt="Kuva 1"
+                data-bs-toggle="modal"
+                data-bs-target="#modal1"
+              />
+              <div class="card-body">
+                <p class="card-text fst-italic text-center mb-0">
+                  "The aurora at night."
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Kuva 2 -->
+          <div class="col">
+            <div class="card">
+              <img
+                src="images/lngdrk2.jpg"
+                class="card-img-top img-fluid"
+                alt="Kuva 2"
+                data-bs-toggle="modal"
+                data-bs-target="#modal2"
+              />
+              <div class="card-body">
+                <p class="card-text fst-italic text-center mb-0">
+                  "Well hello there."
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Kuva 3 -->
+          <div class="col">
+            <div class="card">
+              <img
+                src="images/lngdrk3.jpg"
+                class="card-img-top img-fluid"
+                alt="Kuva 3"
+                data-bs-toggle="modal"
+                data-bs-target="#modal3"
+              />
+              <div class="card-body">
+                <p class="card-text fst-italic text-center mb-0">
+                  "Beautiful view from Ravine."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modalit pysyvät samana kuin ennen, kuvateksti modalissa säilyy -->
+
+        <!-- Modalit -->
+        <!-- Modal 1 -->
+        <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-dark text-white">
+              <div class="modal-header border-0">
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body p-0 text-center">
+                <img
+                  src="images/lngdrk1.jpg"
+                  class="img-fluid"
+                  alt="Kuva 1"
+                  style="max-height: 90vh"
+                />
+                <p class="mt-2 mb-2 fst-italic">"The aurora at night."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-dark text-white">
+              <div class="modal-header border-0">
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body p-0 text-center">
+                <img
+                  src="images/lngdrk2.jpg"
+                  class="img-fluid"
+                  alt="Kuva 2"
+                  style="max-height: 90vh"
+                />
+                <p class="mt-2 mb-2 fst-italic">"Well hello there."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 3 -->
+        <div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-dark text-white">
+              <div class="modal-header border-0">
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body p-0 text-center">
+                <img
+                  src="images/lngdrk3.jpg"
+                  class="img-fluid"
+                  alt="Kuva 3"
+                  style="max-height: 90vh"
+                />
+                <p class="mt-2 mb-2 fst-italic">
+                  "Beautiful view from Ravine."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--PROGRESS BAR 500 DAY ACHIEVEMENT!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+        <h2 class="mt-5">Saavutusesittely</h2>
+        <p>
+          Yksi pelin vaikeimmista saavutuksista on selvitä 1000 päivää yhdessä
+          tallennuksessa. Tällä hetkellä olen selvinnyt 336 päivää. Tässä
+          visuaalinen esitys edistyksestäni kohti päivää 1000:
+        </p>
+
+        <!-- Milestoneit prosentteina -->
+        <div class="mb-3">
+          <label class="form-label">1 päivä (Avattu 19.4.2018)</label>
+          <div class="progress">
+            <div
+              class="progress-bar bg-success"
+              role="progressbar"
+              data-progress="100"
+            >
+              0%
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">10 päivää (Avattu 21.4.2018)</label>
+          <div class="progress">
+            <div
+              class="progress-bar bg-success"
+              role="progressbar"
+              data-progress="100"
+            >
+              0%
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">50 päivää (Avattu 18.1.2019)</label>
+          <div class="progress">
+            <div
+              class="progress-bar bg-success"
+              role="progressbar"
+              data-progress="100"
+            >
+              0%
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">100 päivää (Avattu 25.6.2021)</label>
+          <div class="progress">
+            <div
+              class="progress-bar bg-success"
+              role="progressbar"
+              data-progress="100"
+            >
+              0%
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">500 päivää</label>
+          <div class="progress">
+            <div
+              class="progress-bar bg-secondary"
+              role="progressbar"
+              data-progress="67.2"
+            >
+              0%
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">1000 päivää</label>
+          <div class="progress">
+            <div
+              class="progress-bar bg-secondary"
+              role="progressbar"
+              data-progress="33.6"
+            >
+              0%
+            </div>
+          </div>
+        </div>
+
+        <!-- Sivunvaihto nappi -->
+        <div class="text-center mt-5 mb-4">
+          <a href="sivu4.html" class="btn btn-primary btn-md btn-hover">
+            Seuraavalle sivulle &rarr;
+          </a>
+        </div>
+
+        <!-- Oikea content loppuu -->
+      </div>
+    </main>
+
+    <!--footteri ja vielä scripti loppuun-->
+    <footer class="bg-dark text-white text-center p-3">
+      <p class="mb-0">
+        &copy; 2025 Erno Tyrylahti. Kaikki oikeudet pidätetään.
+      </p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,257 @@
+/* ------------------------------
+   Perusbody ja sivun feidaus
+--------------------------------*/
+body {
+  background-color: #f0f4f8;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  color: #343a40;
+  position: relative;
+  isolation: isolate;
+}
+
+body.loaded {
+  opacity: 1;
+}
+
+/* ------------------------------
+   TAUSTAKUVA VAIN SIVULLE 3
+--------------------------------*/
+.page-sivu3::before {
+  content: "";
+  position: fixed;
+  inset: -20px; /* TÄRKEÄ: estää reunaongelmat */
+  background: url("images/sivu3favicon.jpg") no-repeat center center / cover;
+  filter: blur(4px) brightness(0.6);
+  z-index: 0;
+  pointer-events: none;
+  animation: slow-pan 20s linear infinite;
+}
+
+@keyframes slow-pan {
+  0% {
+    background-position: center top;
+  }
+  50% {
+    background-position: center bottom;
+  }
+  100% {
+    background-position: center top;
+  }
+}
+
+/* ------------------------------
+   Main wrapper
+--------------------------------*/
+main.lngdrk-bg {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 64px;
+}
+
+main {
+  padding-top: 70px; /* fixed-top navbarin korkeus */
+}
+
+/* ------------------------------
+   Heading-tyylit
+--------------------------------*/
+h1,
+h2 {
+  color: #1f3a5f;
+  margin-bottom: 1rem;
+}
+
+/* ------------------------------
+   Paragraphit
+--------------------------------*/
+p {
+  line-height: 1.6;
+  color: #495057;
+}
+
+/* ------------------------------
+   Alertit
+--------------------------------*/
+.alert {
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* ------------------------------
+   Cardit
+--------------------------------*/
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-bottom: 2rem;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.card-body p {
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.5); /* tumma läpinäkyvä tausta */
+  color: #ffffff; /* valkoinen teksti */
+  font-size: 0.9rem;
+  margin: 0;
+  text-align: center;
+  border-radius: 5px; /* pehmeämmät reunat */
+}
+
+/* ------------------------------
+   Listat
+--------------------------------*/
+.list-group-item {
+  transition: all 0.2s ease-in-out;
+}
+
+.list-group-item:hover {
+  background-color: #e7f1ff;
+  transform: scale(1.03);
+}
+
+/* ------------------------------
+   Buttonit
+--------------------------------*/
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0b5ed7;
+  transform: scale(1.05);
+}
+
+/* ------------------------------
+   Navbar
+--------------------------------*/
+.navbar {
+  background-color: #ffffff;
+  z-index: 1030; /* alle modalien */
+}
+
+.nav-link {
+  font-weight: 600;
+  color: #495057;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #0d6efd;
+  transform: scale(1.05);
+  border-bottom: none;
+}
+
+.nav-link.active {
+  color: #0d6efd;
+  border-bottom: 2px solid #0d6efd;
+}
+
+/* ------------------------------
+   Footer
+--------------------------------*/
+footer {
+  position: relative;
+  z-index: 2;
+}
+
+footer p {
+  color: #ffffff;
+  margin: 0;
+}
+
+/* ------------------------------
+   Modalit (KUVA CARDIT)
+--------------------------------*/
+.modal {
+  z-index: 1050;
+}
+
+.modal-backdrop {
+  z-index: 1040;
+}
+
+.modal-content {
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #111;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.modal-header {
+  position: relative;
+  z-index: 2;
+}
+
+.modal-body {
+  padding: 0;
+  text-align: center;
+}
+
+.modal-body img {
+  width: 100%;
+  height: auto;
+  cursor: default;
+}
+
+.modal-body p {
+  padding: 0.5rem 1rem;
+  background-color: #1f3a5f;
+  color: #ffffff;
+  font-size: 0.9rem;
+  margin: 0;
+  text-align: center;
+}
+
+/* ------------------------------
+   Progress bar
+--------------------------------*/
+.progress-bar {
+  width: 0%;
+  transition: width 5s ease-in-out;
+}
+
+/* ------------------------------
+   Responsive
+--------------------------------*/
+@media (max-width: 576px) {
+  h1,
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn-primary {
+    font-size: 0.9rem;
+  }
+
+  .modal-dialog {
+    max-width: 90%;
+  }
+
+  .modal-body p {
+    font-size: 0.8rem;
+  }
+}
+
+.page-sivu3 h1,
+.page-sivu3 h2,
+.page-sivu3 p,
+.page-sivu3 label {
+  color: #f1f5f9;
+}
+
+.page-sivu3 > * {
+  position: relative;
+  z-index: 1;
+}
+
